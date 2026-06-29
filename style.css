@@ -1,0 +1,266 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fc;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+main {
+    flex: 1;
+}
+
+/* HEADER */
+header {
+    width: 100%;
+    background-color: #ffffff;
+    border-bottom: 3px solid #d10c2b;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem 2rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #001444;
+}
+
+.logo img {
+    height: 60px;
+    width: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #001444;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #d10c2b;
+}
+
+/* HERO */
+.hero {
+    min-height: 85vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 4rem 2rem;
+    text-align: center;
+
+    background: linear-gradient(
+        135deg,
+        #ffffff 0%,
+        #eef2ff 100%
+    );
+}
+
+.hero-text {
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: #001444;
+    margin-bottom: 1.5rem;
+}
+
+.hero h1 span {
+    color: #d10c2b;
+}
+
+.hero h2 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+/*HISTOIRE DU CLUB*/
+.theclub {
+    background-color: #001444;
+    color: #ffffff;
+
+    padding: 2%;
+}
+.segment {
+    display: flex;
+    flex-direction: row;
+    margin: 3%;
+}
+.segment img {
+    width: 80%;
+    height: 80%;
+    border: 3px solid white;
+    border-radius: 10px;
+}
+.segment-img {
+    display: flex;
+    flex-direction: column;
+}
+#img1 {
+    margin-right: 5%;
+    margin-bottom: 2%;
+}
+
+#img2 {
+    margin-left: 15%;
+    margin-bottom: 2%;
+}
+
+#img3 {
+    margin-right: 5%;
+}
+.theclub-text {
+    margin-left: 5%;
+    right: 5%;
+}
+
+
+
+/* BOUTON */
+.btn-primary{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 12px 24px;
+
+    background-color: #d10c2b;
+    color: #ffffff;
+
+    text-decoration: none;
+    border: solid 2px #d10c2b ;
+    border-radius: 8px;
+
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #ffffff;
+    color: #d10c2b;
+}
+
+.btn-secondary{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 12px 24px;
+
+    background-color: #ffffff;
+    color: #d10c2b;
+
+    text-decoration: none;
+    border: solid 2px #d10c2b ;
+    border-radius: 8px;
+
+    transition: 0.3s;
+}
+
+.btn-secondary:hover {
+    background-color: #d10c2b;
+    color: #ffffff;
+}
+/* ARTICLE PREVIEW */
+.article-preview {
+    border: 2px solid #001444;
+    border-radius: 10px;
+    text-align: left;
+    max-width: 80%;
+    padding: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: row;
+
+
+    transition: box-shadow 0.3s ease;
+    transition:  0.3s ease;
+}
+.article-preview:hover{
+    box-shadow: 10px 10px 20px#d10c2b;
+    transform: scale(1.02);
+}
+.article-preview h2 {
+    font-size: 2.5em;
+    color: #001444;
+    margin-bottom: 0;
+}
+.article-preview h3 {
+    font-size: 1.25em;
+    margin-bottom: 1rem;
+}
+.article-preview img {
+    width: 40%;
+    border: 2px solid #001444;
+    border-radius: 3px;
+}
+/* ARTICLE*/
+.article {
+    padding-top: 5%;
+    padding-left: 10%;
+    padding-right: 3%;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+}
+.article h1{
+    color: #001444;
+    font-size: 2.5em;
+}
+.title-author {
+        display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+}
+.article-text {
+    margin-right: 3%;
+}
+.title-author {
+    display: flex;
+    flex-direction: row;
+}
+
+
+/* FOOTER */
+footer {
+    background-color: #001444;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+}

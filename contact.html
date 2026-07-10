@@ -55,66 +55,64 @@
 
 
 
-<main>
+<main class="contact-page">
 
-<section class="article-page">
-
-
-    <article class="article-card">
+    <form class="contact-form">
 
 
-        <img class="article-banner" 
-             src="images/banièreHockey.png"
-             alt="Bannière hockey">
+        <h1>
+            Nous contacter
+        </h1>
+        <h3>Un renseignement ne vous engage pas.</h3>
 
 
-        <div class="article-content">
+        <div class="form-group">
 
+            <label for="title">
+                Objet du mail
+            </label>
 
-            <div class="article-header">
-
-                <h1>
-                    Titre de l'article
-                </h1>
-
-
-                <p class="article-meta">
-                    Auteur de l'article • 4 juillet 2026
-                </p>
-
-
-            </div>
-
-
-
-            <h2>
-                Sous-titre de l'article
-            </h2>
-
-
-            <p>
-                Premier paragraphe de l'article. Premier paragraphe de l'article.
-                Premier paragraphe de l'article. Premier paragraphe de l'article.
-                Premier paragraphe de l'article.
-            </p>
-
-
-            <p>
-                Second paragraphe de l'article. Second paragraphe de l'article.
-                Second paragraphe de l'article. Second paragraphe de l'article.
-            </p>
-
+            <input 
+                type="text" 
+                id="title"
+                placeholder="Titre de votre article"
+                required
+                autofocus
+            >
 
         </div>
 
-            
-    </article>
-    <section class="more-article">
-      <a href="articles.html" class="btn-secondary">Lire d'autres articles</a>
-    </section>
 
-</section>
 
+        <div class="form-group">
+
+            <label for="paragraph1">
+                Contenu du mail
+            </label>
+
+            <textarea 
+                id="paragraph1"
+                rows="8"
+                placeholder="Écrivez votre introduction..."
+                required>
+            </textarea>
+
+        </div>
+
+
+
+        <button type="submit" class="submit-btn">
+            Envoyer l'e-mail
+        </button>
+
+
+    </form>
+    <p>Vous pouvez également nous contacter directement par mail à l'adresse <strong>contact@nancy-hockey.net</strong> ou par téléphone : 
+        <ul>
+        <li>Louis-Nicolas 0 (0 33) 6 20 64 32 86</li>
+        <li>Pierre 0 (0 33) 6 18 85 07 74</li>
+        </ul>
+    </p>
 
 </main>
 
@@ -130,4 +128,5 @@
 
 
 </body>
+
 </html>

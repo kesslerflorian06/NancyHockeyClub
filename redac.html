@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nancy Hockey Club</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+  <nav>
+
+    <div class="logo">
+      <img src="images/logoHockeyClub.png">
+      Nancy Hockey Club
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="articles.html">Articles</a></li>
+      <li><a href="liguegrandest.html">Ligue du Grand Est</a></li>
+      <li><a href="inscription.html">Inscription</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+
+    <div class="nav-right">
+
+      <a class="btn-secondary" href="redac.html">
+        Publier un article
+      </a>
+
+
+      <div class="profile-user">
+
+        <div class="avatar">
+          👤
+        </div>
+
+        <div class="user-info">
+          <span>Connecté</span>
+          <strong>Rédacteur</strong>
+        </div>
+
+      </div>
+
+    </div>
+
+  </nav>
+</header>
+
+
+
+<main class="redac-page">
+
+    <form class="redac-form">
+
+
+        <h1>
+            Rédaction d'un article
+        </h1>
+
+
+        <div class="form-group">
+
+            <label for="title">
+                Titre de l'article
+            </label>
+
+            <input 
+                type="text" 
+                id="title"
+                placeholder="Titre de votre article"
+                required
+                autofocus
+            >
+
+        </div>
+
+
+
+        <div class="form-group">
+
+            <label for="paragraph1">
+                Premier paragraphe
+            </label>
+
+            <textarea 
+                id="paragraph1"
+                rows="8"
+                placeholder="Écrivez votre introduction..."
+                required>
+            </textarea>
+
+        </div>
+
+
+
+        <div class="form-group">
+
+            <label for="paragraph2">
+                Second paragraphe
+            </label>
+
+            <textarea 
+                id="paragraph2"
+                rows="8"
+                placeholder="Suite de votre article..."
+                required>
+            </textarea>
+
+        </div>
+
+
+
+        <div class="form-group">
+
+            <label for="image">
+                Image de couverture
+            </label>
+
+            <input 
+                type="file"
+                id="image"
+                required
+            >
+
+        </div>
+
+
+
+        <button type="submit" class="submit-btn">
+            Publier l'article
+        </button>
+
+
+    </form>
+
+
+</main>
+
+
+
+<footer>
+
+    <p>
+        © 2026 - Nancy Hockey Club
+    </p>
+
+</footer>
+
+
+</body>
+
+</html>
